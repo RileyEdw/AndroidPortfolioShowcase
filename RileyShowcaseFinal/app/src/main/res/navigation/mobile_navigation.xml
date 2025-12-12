@@ -12,14 +12,19 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_scifi"
         android:name="com.example.rileyshowcasefinal.ui.SciFiName.SciFiNameFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_scifi"
         tools:layout="@layout/fragment_scifiname" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_madlibs"
         android:name="com.example.rileyshowcasefinal.ui.MadLibs.MadLibsFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_madlibs"
         tools:layout="@layout/fragment_madlibs" />
+    <fragment
+        android:id="@+id/nav_guessnumber"
+        android:name="com.example.rileyshowcasefinal.ui.GuessNumber.GuessNumberFragment"
+        android:label="@string/menu_guessnumber"
+        tools:layout="@layout/fragment_guessnumber" />
 </navigation>

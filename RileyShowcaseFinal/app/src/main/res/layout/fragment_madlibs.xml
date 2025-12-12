@@ -2,21 +2,321 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.MadLibs.MadLibsFragment">
+    <!--This is the menu layout.-->
 
-    <TextView
-        android:id="@+id/text_slideshow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="44dp"
+        android:orientation="vertical"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24sp"
+            android:text="Welcome to Android Mad Libs!"
+            android:textAlignment="center"
+            android:textColor="#19B543"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/parkBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24sp"
+            android:text="A Day in the Park" />
+
+        <Button
+            android:id="@+id/magicBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24sp"
+            android:text="A Magical Discovery" />
+
+        <Button
+            android:id="@+id/spaceBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24sp"
+            android:text="Space Mission Gone Wrong" />
+
+        <Button
+            android:id="@+id/randomBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Random Story" />
+    </LinearLayout>
+    <!--This is the selection layout here-->
+    <LinearLayout
+        android:id="@+id/selectionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/selectionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:padding="10dp"
+            android:text="Story"
+            android:textAlignment="center"
+            android:textColor="#26EB2C"
+            android:textSize="37sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            android:padding="1sp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter a Name:"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/nameTXT"
+                android:layout_width="201dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            android:padding="1sp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter a Place:"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/placeTXT"
+                android:layout_width="201dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            android:padding="1sp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter a Plural Noun:"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/nounTXT"
+                android:layout_width="201dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            android:padding="1sp">
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter an Adjective:"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/adjectiveTXT"
+                android:layout_width="201dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            android:padding="1sp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter a Past Tense Verb:"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/verbTXT"
+                android:layout_width="201dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            android:padding="1sp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter an Animal:"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/animalTXT"
+                android:layout_width="201dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            android:padding="1sp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter a Silly Word:"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/sillyTXT"
+                android:layout_width="201dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            android:padding="1sp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter an Object"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/objectTXT"
+                android:layout_width="201dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/generatorBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate My Story!" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/storyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="581dp">
+
+        <TextView
+            android:id="@+id/storyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12sp"
+            android:text="Yesterday, [1. Name] went to the [2. Place] to feed the [3. Plural noun].
+ It was a [4. Adjective] afternoon. Suddenly, someone [5. Verb - past tense] right next to a [6. Animal], yelling [7. Silly word]!
+        Startled, [1. Name] dropped their [8. Object] and ran away laughing."
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/returnBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return to Main Menu" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
