@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditsActivity">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="408dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="138dp"
+        android:text="App Made By Riley Edwards"
+        android:textAlignment="center"
+        android:textColor="#07b504"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:text="How to Play Guess a Number:\nStep 1: Guess a Number\nStep 2: Look at the feedback you are given\nStep 3: Guess a number that fits that feedback.\nStep 4: Repeat Steps 2 and 3\n You will get a new number everytime you guess the number correctly."
+        android:textAlignment="center"
+        android:textColor="#07b504"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="59dp"
+        android:text="Big Thanks to: \n https://developer.android.com/develop/ui/views/text-and-emoji/fonts-in-xml for helping with fonts\nhttps://developer.android.com/topic/libraries/view-binding for helping me understand how to use binding\nImages Made By Me"
+        android:textAlignment="center"
+        android:textColor="#07b504"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:text="Return to Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,15 +2,13 @@
     <string name="app_name">RileyShowcaseFinal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Riley Edwards</string>
+    <string name="nav_header_subtitle">edwardsriley777@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_credits">Credits</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_scifi">SciFi Name Generator</string>
     <string name="menu_madlibs">Madlibs</string>
     <string name="menu_guessnumber">Guess A Number</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
