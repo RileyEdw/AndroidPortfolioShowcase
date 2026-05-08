@@ -22,9 +22,16 @@
         android:name="com.example.rileyshowcasefinal.ui.MadLibs.MadLibsFragment"
         android:label="@string/menu_madlibs"
         tools:layout="@layout/fragment_madlibs" />
+
     <fragment
         android:id="@+id/nav_guessnumber"
         android:name="com.example.rileyshowcasefinal.ui.GuessNumber.GuessNumberFragment"
         android:label="@string/menu_guessnumber"
         tools:layout="@layout/fragment_guessnumber" />
+
+    <fragment
+        android:id="@+id/nav_doodling"
+        android:name="com.example.rileyshowcasefinal.ui.Doodle.DoodleFragment"
+        android:label="Doodling"
+        tools:layout="@layout/fragment_doodle" />
 </navigation>

@@ -20,6 +20,10 @@
             android:id="@+id/nav_madlibs"
             android:icon="@drawable/baseline_mood_24"
             android:title="@string/menu_madlibs" />
+        <item
+            android:id="@+id/nav_doodling"
+            android:icon="@drawable/baseline_draw_24"
+            android:title="Doodling" />
 
     </group>
 </menu>

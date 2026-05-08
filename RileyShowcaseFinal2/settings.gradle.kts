@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RileyShowcaseFinal"
+rootProject.name = "RileyShowcaseFinal2"
 include(":app")
  
